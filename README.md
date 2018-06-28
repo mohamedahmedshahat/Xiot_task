@@ -1,8 +1,8 @@
 # Xiot_task
 This is application requested by Xiot
 #instruction for building this app:
-1-configure IO pins and initialize it and setting up it's interrputs in NVIC module 
-2-configure ADC module and it's driver in seperate file 
+1-configure IO pins and initialize it and setting up it's interrputs in NVIC module (i configured built in button(PF4) as input and built in LED as output(PF1))
+2-configure ADC module and it's driver in seperate file(i configured PE2 as analog PIN) 
 3-configure uart module and it's driver in seperate file 
 4-configure Systick timer and setting up it's interrupt ISR to sample temp sensor analog signal through ADC driver and serialize it's data through Uart module 
 5-write down Xiot_function and take switch state as input and based on it, drive led (High,low) also send serial data of led and switch status through uart module to PC through debugger cable 
